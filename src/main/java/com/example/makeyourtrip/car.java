@@ -6,5 +6,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class car {
     @GetMapping("/car")
-    public String getData() {return  " FREE FREE FREE cars " ; }
+    public String getData() {return  " Nothing is FREE " ; }
 }
