@@ -1,1 +1,46 @@
+Maven
+	- it is a build tool
+	- Maven is used to compile and package the source code
+	- JAVA : uses Mava, Gradle and Ant build tools
+	- .NET : mmsbuild
+	- every programming language uses a build tool
 
+mvn clean compile:
+	- reads pom.xml command and checks the dependencies as well as downlods the missing dependencies from central repository
+	- repo.maven.apache.org/maven is a central repository
+	- Parent object model (pom.xml)
+	- reads all .java files and converts them to .class
+	- 
+mvn build Lifecycle
+	- valide
+	- compile
+	- test
+	- package
+	- verify, test and deploy 
+
+
+SourceCodeRepo:: Github, GitLab (need to use as a Internet service)
+ArtifactRepo:: Nexus, Jfrog, Harbour (these are tools, need to be downloaded)
+LocalRepo
+CentralRepo
+mvn setting.xml 
+
+
+Commads:
+git pull origin dev
+mvn clean compile
+mvn clean package
+mvn spring-boot:run 
+http://localhost:8080/flight
+
+git add --all
+git commit -m "comments"
+git push origin dev -f
+
+git status
+git diff
+git stash
+git checkout
+git merge
+git clone
+git push origin dev
