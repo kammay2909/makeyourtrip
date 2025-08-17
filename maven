@@ -37,10 +37,11 @@ git add --all
 git commit -m "comments"
 git push origin dev -f
 
+git branch
 git status
 git diff
 git stash
-git checkout
+git checkout int
 git merge
 git clone
 git push origin dev
