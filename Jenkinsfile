@@ -32,5 +32,12 @@ pipeline {
                 echo 'JAR Artifact Created Successfully!'
             }
         }
+        stage('Call Bus URL') {
+                    steps {
+                        echo 'Calling Bus URL...'
+                        sh 'curl -X GET http://localhost:8080/bus'
+                        echo 'launched Successfully!'
+                    }
+                }
     }
 }
