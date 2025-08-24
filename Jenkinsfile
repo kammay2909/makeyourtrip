@@ -35,6 +35,7 @@ pipeline {
         stage('Call Bus URL') {
                     steps {
                         echo 'Calling Bus URL...'
+                        sh 'mvn spring-boot:run'
                         sh 'curl -X GET http://localhost:8080/bus'
                         echo 'launched Successfully!'
                     }
