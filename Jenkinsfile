@@ -12,17 +12,17 @@ options {
         stage ('compile stage') {
             steps {
                  echo "Compile the package"
-                 "mvn clean compile"
+                 sh "mvn clean compile"
 
             }
         }
-    stages{
-        stage ('build stage') {
+    stage ('build stage') {
             steps {
                 echo "now build the package"
-                "sh. mvn clean package"
+                sh "mvn clean package"
         }
         }
+
     stage ('Call API') {
         steps {
             sh 'curl -X GET http://localhost:8080/bus'
