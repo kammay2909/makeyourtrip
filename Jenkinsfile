@@ -3,7 +3,7 @@
 pipeline {
 
 options {
-        buildDiscarder(logRotator(numToKeepStr: '3', artifiactNumToKeepStr: '3'))
+        buildDiscarder(logRotator(numToKeepStr: '3', artifactNumToKeepStr: '3'))
     }
 
     agent any
@@ -20,7 +20,7 @@ options {
         stage ('build stage') {
             steps {
                 echo "now build the package"
-                "mvn clean package"
+                "sh. mvn clean package"
         }
         }
     stage ('Call API') {
