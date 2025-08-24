@@ -9,7 +9,7 @@ options {
     agent any
 
     stages {
-        stage (compile stage) {
+        stage ('compile stage') {
             steps {
                  echo "Compile the package"
                  "mvn clean compile"
@@ -17,7 +17,7 @@ options {
             }
         }
     stages{
-        stage (build stage) {
+        stage ('build stage') {
             steps {
                 echo "now build the package"
                 "mvn clean package"
